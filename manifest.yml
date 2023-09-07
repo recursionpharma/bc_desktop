@@ -1,0 +1,9 @@
+---
+name: Jupyter Sandbox
+category: Interactive Apps
+subcategory: Servers
+role: batch_connect
+description: |
+  This app will launch a [Jupyter] server on the BioHive cluster.
+
+  [Jupyter]: https://jupyter.org/
