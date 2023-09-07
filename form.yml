@@ -1,4 +1,20 @@
 attributes:
+  gpu_type:
+    label: GPU Type
+    widget: select
+    options:
+      - ["none", "none"]
+      - ["a100", "a100"]
+      - ["1080ti", "1080ti"] 
+      - ["v100", "v100"]
+    class: "gpu-selection"
+  num_gpus:
+    widget: "number_field"
+    label: "Number of GPUS"
+    value: 0
+    required: true
+    help: "Specify the number of GPUs for the job"
+    class: "gpu-count-field"
   desktop: xfce
   bc_queue:
     label: Slurm Partition
@@ -37,10 +53,14 @@ attributes:
     max: 24
     required: true
     help: "Specify the number of hours. Min: 1hr, Max: 24hrs"
+  cluster: "slurm"
 
 form:
+  - cluster
   - bc_queue
   - bc_num_hours
+  - gpu_type
+  - num_gpus
   - num_cores
   - memory
   - desktop
