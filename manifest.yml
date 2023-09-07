@@ -1,9 +1,9 @@
 ---
-name: Jupyter Sandbox
+name: Desktop
+icon: fa://desktop
 category: Interactive Apps
-subcategory: Servers
+subcategory: BioHive Access
 role: batch_connect
 description: |
-  This app will launch a [Jupyter] server on the BioHive cluster.
-
-  [Jupyter]: https://jupyter.org/
+  This will launch an interactive desktop session on a BioHive compute node. You
+  will have full access to the resources these nodes provide. 

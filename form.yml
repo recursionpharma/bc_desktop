@@ -1,0 +1,51 @@
+attributes:
+  desktop: xfce
+  bc_queue:
+    label: Slurm Partition
+    widget: select
+    options:
+      - ["batch", "batch"]
+      - ["interactive", "interactive"]
+      - ["mem", "mem"]
+  bc_num_slots: null
+  num_cores:
+    widget: "number_field"
+    label: "Number of Cores"
+    value: 1
+    min: 1
+    max: 16
+    required: true
+    help: "Specify the number of cores for the job. Max: 16"
+  bc_vnc_idle: 0
+  bc_vnc_resolution:
+    required: true
+  node_type: null
+  bc_account: null
+  memory:
+    widget: "number_field"
+    label: "Memory (GB)"
+    value: 2
+    min: 1
+    max: 32
+    required: true
+    help: "Specify the amount of memory in MB. Min: 2GB, Max: 32GB"
+  bc_num_hours:
+    widget: "number_field"
+    label: "Number of Hours"
+    value: 1
+    min: 1
+    max: 24
+    required: true
+    help: "Specify the number of hours. Min: 1hr, Max: 24hrs"
+
+form:
+  - bc_queue
+  - bc_num_hours
+  - num_cores
+  - memory
+  - desktop
+  - bc_vnc_idle
+  - bc_account
+  - node_type
+  - bc_vnc_resolution
+  # - bc_email_on_started

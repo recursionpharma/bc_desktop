@@ -1,8 +1,4 @@
-# Batch Connect - Jupyter
+# Batch Connect - Desktop
 
-![GitHub Release](https://img.shields.io/github/release/osc/bc_osc_jupyter.svg)
-[![GitHub License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
-
-An interactive app template designed for the BioHive Portal that launches a Jupyter
-server.
-
+This app is distributed as a part of Open OnDemand. Read https://osc.github.io/ood-documentation/latest/enable-desktops.html
+for instructions on how to configure it.
